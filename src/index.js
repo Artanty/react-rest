@@ -2,7 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 import * as serviceWorker from './serviceWorker';
-import FetchComponent from './components/step2/FetchComponent';
+import FetchComponent from './components/step3/FetchComponent';
 
 ReactDOM.render(
   <React.StrictMode>
