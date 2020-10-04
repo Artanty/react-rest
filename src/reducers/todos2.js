@@ -1,15 +1,16 @@
-const todos = (state = [], action) => {
+import {SET} from "../constants/action-types";
+
+
+export const todos2 = (state = [], action) => {
   switch (action.type) {
-    case 'ADD_TODO':
+    case 'SET2':
       return [
         ...state,
         {
-          id: action.id,
-          text: action.text,
-          completed: false
+          payload: action
         }
       ]
-    case 'TOGGLE_TODO':
+    case 'TOGGLE_TODO2':
       return state.map(todo =>
         todo.id === action.id ? { ...todo, completed: !todo.completed } : todo
       )
@@ -17,5 +18,3 @@ const todos = (state = [], action) => {
       return state
   }
 }
-
-export default todos
